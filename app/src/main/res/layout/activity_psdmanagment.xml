@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context="edu.ucla.cs.lasr.psd.PSDManagement">
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_bt_psd_device"
+            android:id="@+id/btn_select_psd"
+            android:layout_marginBottom="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/tv_gps_connection_status"
+            android:layout_alignEnd="@+id/tv_gps_connection_status"
+            android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/bt_connection_label"
+            android:id="@+id/tv_bluetooth_connection_label"
+            android:layout_marginTop="34dp"
+            android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/tv_wifi_connection_label"
+            android:layout_alignEnd="@+id/tv_wifi_connection_label" android:textStyle="bold"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/wifi_connection_label"
+            android:id="@+id/tv_wifi_connection_label"
+            android:layout_marginTop="60dp"
+            android:layout_below="@+id/tv_bluetooth_connection_label"
+            android:layout_alignParentLeft="true" android:layout_alignParentStart="true"
+            android:textStyle="bold"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/wifi_connection_status"
+            android:id="@+id/tv_wifi_connection_status"
+            android:layout_toEndOf="@+id/tv_wifi_connection_label"
+            android:gravity="center|top"
+            android:layout_alignTop="@+id/tv_wifi_connection_label"
+            android:layout_alignRight="@+id/tv_bluetooth_connection_status"
+            android:layout_alignEnd="@+id/tv_bluetooth_connection_status"
+            android:layout_above="@+id/tv_gps_connection_status"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/bt_connection_status"
+            android:id="@+id/tv_bluetooth_connection_status"
+            android:layout_toEndOf="@+id/tv_bluetooth_connection_label"
+            android:layout_alignTop="@+id/tv_bluetooth_connection_label"
+            android:layout_alignParentRight="true" android:layout_alignParentEnd="true"
+            android:textIsSelectable="false" android:gravity="center|top"
+            android:layout_above="@+id/tv_wifi_connection_status"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/gps_connection_label"
+            android:id="@+id/tv_gps_connection_label"
+            android:layout_toStartOf="@+id/tv_wifi_connection_status"
+            android:layout_below="@+id/tv_wifi_connection_label"
+            android:layout_alignParentLeft="true" android:layout_alignParentStart="true"
+            android:layout_marginTop="80dp" android:textStyle="bold"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/tv_gps_connection_status"
+            android:text="@string/gps_connection_status"
+            android:layout_toEndOf="@+id/tv_gps_connection_label"
+            android:layout_alignTop="@+id/tv_gps_connection_label"
+            android:gravity="center_horizontal|top"
+            android:layout_alignBottom="@+id/tv_gps_connection_label"/>
+
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/select_wifi_AP"
+            android:id="@+id/btn_select_AP"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/tv_gps_connection_status"
+            android:layout_alignEnd="@+id/tv_gps_connection_status"
+            android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+</RelativeLayout>

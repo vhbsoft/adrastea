@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PSD</string>
+    <string name="action_settings">Settings</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="title_activity_psd_management">PSD</string>
+    <string name="bt_connection_label">Bluetooth Connection:</string>
+    <string name="wifi_connection_label">Wifi Connection:</string>
+    <string name="gps_connection_label">GPS Coordinates:</string>
+    <string name="bt_connection_status">Not Connected</string>
+    <string name="wifi_connection_status">Not Connected</string>
+    <string name="gps_connection_status">Location Unknown</string>
+    <string name="select_bt_psd_device">Select PSD Device (Bluetooth)</string>
+    <string name="select_wifi_AP">Select Access Point (WiFi)</string>
+    <string name="title_activity_select_ap">PSD</string>
+    <string name="connect">Connect</string>
+
+</resources>
